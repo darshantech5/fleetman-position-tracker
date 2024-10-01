@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    
+triggers {
+        pollSCM('') // Empty string disables SCM polling
+    }
 
     environment {
         // You must set the following environment variables
